@@ -23,12 +23,12 @@
 		637D95891C4E374500F1FA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637D95881C4E374500F1FA67 /* Assets.xcassets */; };
 		637D958E1C4E375100F1FA67 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D95711C4E370C00F1FA67 /* RxAlamofire.framework */; };
 		637D958F1C4E375100F1FA67 /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 637D95711C4E370C00F1FA67 /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		637D95951C4E37CE00F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		637D95961C4E37CE00F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		637D95991C4E37F200F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		637D959A1C4E37F200F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		637D959D1C4E380300F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		637D959E1C4E380300F1FA67 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		637D95951C4E37CE00F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		637D95961C4E37CE00F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		637D95991C4E37F200F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		637D959A1C4E37F200F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		637D959D1C4E380300F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		637D959E1C4E380300F1FA67 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		637D959F1C4E3BB500F1FA67 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40E3F71B89C59F00D1DB5A /* MasterViewController.swift */; };
 		83FCA92C44E8A347B0AB0207 /* Pods_RxAlamofiretvOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8942AB230583C8D6C5414E /* Pods_RxAlamofiretvOSExample.framework */; };
 		B3B7DEC4E02D9FE0ED3F1B91 /* Pods_RxAlamofire_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE749FBB9E17BC4F9F8029F7 /* Pods_RxAlamofire_iOS.framework */; };
@@ -54,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		31B723D81E5EC17600CD9CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB40E3EA1B89C59F00D1DB5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB40E3F11B89C59F00D1DB5A;
+			remoteInfo = RxAlamofireExample;
+		};
 		637D95901C4E375100F1FA67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB40E3EA1B89C59F00D1DB5A /* Project object */;
@@ -496,6 +503,7 @@
 			);
 			dependencies = (
 				CB30D9DE1BF09E9C0084C1C0 /* PBXTargetDependency */,
+				31B723D91E5EC17600CD9CBD /* PBXTargetDependency */,
 			);
 			name = RxAlamofireTests;
 			productName = RxAlamofireTests;
@@ -618,15 +626,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637D95991C4E37F200F1FA67 /* (null) in Resources */,
-				637D959E1C4E380300F1FA67 /* (null) in Resources */,
+				637D95991C4E37F200F1FA67 /* BuildFile in Resources */,
+				637D959E1C4E380300F1FA67 /* BuildFile in Resources */,
 				CB40E4021B89C59F00D1DB5A /* LaunchScreen.storyboard in Resources */,
 				CB40E3FF1B89C59F00D1DB5A /* Assets.xcassets in Resources */,
-				637D959D1C4E380300F1FA67 /* (null) in Resources */,
+				637D959D1C4E380300F1FA67 /* BuildFile in Resources */,
 				CB40E3FD1B89C59F00D1DB5A /* Main.storyboard in Resources */,
-				637D95951C4E37CE00F1FA67 /* (null) in Resources */,
-				637D95961C4E37CE00F1FA67 /* (null) in Resources */,
-				637D959A1C4E37F200F1FA67 /* (null) in Resources */,
+				637D95951C4E37CE00F1FA67 /* BuildFile in Resources */,
+				637D95961C4E37CE00F1FA67 /* BuildFile in Resources */,
+				637D959A1C4E37F200F1FA67 /* BuildFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +713,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofire-iOS-RxAlamofireTests/Pods-RxAlamofire-iOS-RxAlamofireTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofireExample-RxAlamofireTests/Pods-RxAlamofireExample-RxAlamofireTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		816E20917384A4CB8F04DD99 /* [CP] Check Pods Manifest.lock */ = {
@@ -735,7 +743,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofire-iOS-RxAlamofireTests/Pods-RxAlamofire-iOS-RxAlamofireTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofireExample-RxAlamofireTests/Pods-RxAlamofireExample-RxAlamofireTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B1C51A5B7D2A49542D184A56 /* [CP] Check Pods Manifest.lock */ = {
@@ -857,6 +865,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		31B723D91E5EC17600CD9CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB40E3F11B89C59F00D1DB5A /* RxAlamofireExample */;
+			targetProxy = 31B723D81E5EC17600CD9CBD /* PBXContainerItemProxy */;
+		};
 		637D95911C4E375100F1FA67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 637D95701C4E370C00F1FA67 /* RxAlamofire-tvOS */;
@@ -1075,7 +1088,7 @@
 		};
 		CB30D9E01BF09E9C0084C1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8428EE87C19BA4025A2EDB9A /* Pods-RxAlamofire-iOS-RxAlamofireTests.debug.xcconfig */;
+			baseConfigurationReference = E867F30E446643943AA36C96 /* Pods-RxAlamofireExample-RxAlamofireTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RxAlamofireTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -1088,7 +1101,7 @@
 		};
 		CB30D9E11BF09E9C0084C1C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C46D9843AEF13C8388023B /* Pods-RxAlamofire-iOS-RxAlamofireTests.release.xcconfig */;
+			baseConfigurationReference = 5E99D2C1D675E7F64B8919E3 /* Pods-RxAlamofireExample-RxAlamofireTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RxAlamofireTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;

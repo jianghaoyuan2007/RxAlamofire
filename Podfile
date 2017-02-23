@@ -11,6 +11,12 @@ end
 target 'RxAlamofireExample' do
     platform :ios, '8.0'
     common
+    
+    target 'RxAlamofireTests' do
+        pod 'OHHTTPStubs'
+        pod 'OHHTTPStubs/Swift'
+        pod 'RxBlocking'
+    end
 end
 
 target 'RxAlamofiretvOSExample' do
@@ -20,10 +26,4 @@ end
 
 target 'RxAlamofire-iOS' do
    common
-
-   target 'RxAlamofireTests' do
-       pod 'OHHTTPStubs'
-       pod 'OHHTTPStubs/Swift'
-       pod 'RxBlocking'
-   end
 end
