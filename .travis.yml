@@ -1,9 +1,16 @@
 osx_image: xcode8.2
 language: objective-c
 before_install:
+  - brew update
+  - brew install xctool
   - gem install cocoapods -v '1.2.0'
 cache:
   - cocoapods
+notifications:
+  email:
+    - jianghaoyuan@e-eduspace.com
+    on_success: always
+    on_fail: always
 xcode-workspace: RxAlamofire.xcworkspace
 xcode-scheme: RxAlamofire-iOS
 xcode_sdk: iphonesimulator10.2
