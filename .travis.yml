@@ -1,4 +1,3 @@
-osx_image: xcode8.2
 language: objective-c
 before_install:
   - brew update
@@ -7,11 +6,6 @@ before_install:
 cache:
   - cocoapods
 notifications:
-  email:
-    - jianghaoyuan@e-eduspace.com
-    on_success: always
-    on_fail: always
-xcode-workspace: RxAlamofire.xcworkspace
-xcode-scheme: RxAlamofire-iOS
+  email: jianghaoyuan@e-eduspace.com
 xcode_sdk: iphonesimulator10.2
 script: xcodebuild -workspace 'RxAlamofire.xcworkspace' -scheme 'RxAlamofire-iOS' -configuration 'Debug' build test  | xcpretty -c --test
