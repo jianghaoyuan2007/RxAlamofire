@@ -1,5 +1,10 @@
-osx_image: xcode8
+osx_image: xcode8.2
 language: objective-c
-
-script: 
-  - set -o pipefail && xcodebuild -workspace 'RxAlamofire.xcworkspace' -scheme 'RxAlamofire-iOS' -configuration 'Debug' -sdk iphonesimulator -destination platform='iOS Simulator',OS='10.0',name='iPhone 7' build test  | xcpretty -c --test
+cache:
+  - cocoapods
+before_install:
+xcode-workspace: RxAlamofire.xcworkspace
+xcode-scheme: RxAlamofire-iOS
+xcode_sdk: iphonesimulator10.2
+  - gem install cocoapods -v '1.2.0'
+script: xcodebuild -workspace 'RxAlamofire.xcworkspace' -scheme 'RxAlamofire-iOS' -configuration 'Debug' build test  | xcpretty -c --test
