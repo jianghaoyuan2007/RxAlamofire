@@ -1,11 +1,9 @@
 language: objective-c
 before_install:
-  - brew update
-  - brew install xctool
   - gem install cocoapods -v '1.2.0'
 cache:
   - cocoapods
 notifications:
   email: jianghaoyuan@e-eduspace.com
 xcode_sdk: iphonesimulator10.2
-script: xcodebuild -workspace 'RxAlamofire.xcworkspace' -scheme 'RxAlamofire-iOS' -configuration 'Debug' build test  | xcpretty -c --test
+script: set -o pipefail && xcodebuild -workspace 'RxAlamofire.xcworkspace' -scheme 'RxAlamofire-iOS' -configuration 'Debug' build test  | xcpretty -c --test
